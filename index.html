@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #d63384;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: #ff4081;
+            color: white;
+        }
+        .podi {
+            background-color: #333;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #d81b60;
+        }
+        .podi:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <button class="yes" onclick="showLove()">Yes</button>
+        <button class="podi" onclick="showPodi()">Podi</button>
+        <p id="response" style="font-size: 1.8em; margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("response").innerHTML = "Yay! I love you ❤️🥰";
+        }
+        function showPodi() {
+            document.getElementById("response").innerHTML = "Poda dei! But I still love you 😜❤️";
+        }
+    </script>
+</body>
+</html>
